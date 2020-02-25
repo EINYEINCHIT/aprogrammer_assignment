@@ -65,22 +65,19 @@ SELECT * FROM `users` ORDER BY `id` ASC;
 
 SELECT * FROM `users` WHERE `name` LIKE '%aung%';
 
-TRUNDATE TABLE `users`;
+TRUNCATE TABLE `users`;
 
 DELETE FROM `users` where id = 6;
 
 UPDATE `users` SET name = 'agag' WHERE id = 1;
 
-
 SELECT * FROM `users`
 INNER JOIN `class`
 ON users.id = class.user_id
 
-
 SELECT * FROM `users`
 LEFT JOIN `class`
 ON users.id = class.user_id (select all records from left table)
-
 
 SELECT * FROM `users`
 RIGHT JOIN `class`
